@@ -1,203 +1,187 @@
 
+/* General Styles */
 body {
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0d1117; /* Oscuro profesional */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0dcaf0 !important; /* Azul claro */
+}
+
+/* Hero Section */
+#inicio {
+    background: url('img/cybersecurity-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    animation: fadein 4s;
-    
-}
-.all_rows{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    
-
 }
 
-.cream_row{
-    background-color: #c9bcbcf3;
-    
+#inicio h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.cream_row h1, .grey_row h1{
-    font-weight: bold;
+#inicio p {
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
-.cream_row hr{
-    height: 2px;
-    background-color: rgb(0, 0, 0);
+#inicio .btn {
+    margin: 0.5rem;
+    font-size: 1.1rem;
 }
 
-.grey_row{
-    background-image: url(../img/imagen1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #d6d3d3;
+/* Sections */
+section {
+    padding: 4rem 0;
 }
 
-.grey_row hr{
-    height: 3px;
-    background-color: #d6d3d3;
+.bg-light {
+    background-color: #f8f9fa !important;
 }
 
-.black_row{
-    text-align:center;
-    background-color: #572b2b;
-    font-size: x-large;
-    text-align: center;
-    height: 45px;
+.bg-dark {
+    background-color: #0d1117 !important;
+    color: #ffffff;
 }
 
-.p_nodecoration{
-    color: #FFFFFF;
-    text-decoration: none;
-    display: inline-block;
-    transition: ease-in-out all 0.5s;
+.text-white {
+    color: #ffffff !important;
 }
 
-.p_nodecoration:hover{
-    font-weight: bold;
-    color: #FFFFFF;
-    text-decoration: none;
-    display: inline-block;
-    transform: scale(1);
+/* Quién Soy */
+#quien-soy img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-#data_column{
-    text-align:center ;
-}
-
-#name_h1{
-    margin-bottom: 0px;
-}
-
-.p_data{
-    font-size: 1.3rem;
-}
-
-@media (max-width: 767px) {
-    #data_colum2n {
-        margin-top:30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .p_data_contact_email{
-        display: inline-block;
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-}
-
-.internet_links{
-    font-weight: bold;
-    color: #572b2b;
-    text-decoration: none;
-    display: inline-block;
-    transition: ease-in-out all 0.5s;
-    font-size: 1.3rem;
-}
-
-.internet_links:hover{
-    font-weight: bold;
-    color: #572b2b;
-    text-decoration: none;
-    display: inline-block;
-    transform: scale(1.1);
-}
-
-.internet_icons{
+#quien-soy h4 {
     margin-top: 1rem;
-    font-size: 4rem;
+    color: #0d1117;
 }
 
-.internet_links p{
-    margin-bottom: 0px;
+/* Servicios */
+#servicios h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0d1117;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#servicios p {
+    color: #555;
 }
 
-.link_photo{
-    cursor: pointer;
+#servicios .col-md-4 {
+    margin-bottom: 2rem;
 }
 
-
-.img_gallery:hover{ 
-    transform: scale(1.1);
+#servicios .col-md-4:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: 0.3s;
 }
 
-.data_date{
-    font-size: 1.4rem;
-    font-weight: bold;
+/* Casos de Éxito */
+#casos-exito h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0d1117;
 }
 
-.data_date_2{
+#casos-exito p {
+    color: #555;
+}
+
+/* Contact Form */
+#contacto .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+#contacto button {
+    background-color: #0dcaf0;
+    border: none;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.accordion-button::after {
-    flex-shrink: initial;
-    width: initial;
-    height: initial;
-    margin-right: auto;
-    background-image: initial;
-    background-repeat: no-repeat;
-    background-size: initial;
-    transition: initial;
+#contacto button:hover {
+    background-color: #0b95c7;
+    transform: translateY(-2px);
 }
 
-.accordion-button:not(.collapsed){
-    color: #d6d3d3;
-    background-color: #572b2b;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.accordion-button:focus {
-    border-color: #572b2b;
-    box-shadow: none;
-}
-
-.accordion-button{
-    display: inline;
+/* Footer */
+footer {
     text-align: center;
+    padding: 2rem 0;
+    background-color: #0d1117;
+    color: #ffffff;
 }
 
-.accordion-button .icon_accordion{
-    transition: all ease 0.5s;
+footer a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
 }
 
-.accordion-button:not(.collapsed) .icon_accordion{
-    transform: rotate(180deg);
+footer a:hover {
+    color: #0dcaf0;
 }
 
-.accordion-button{
-    color: #d6d3d3;
-    transition: all ease 0.5s;
-    font-size: 1rem;
-    border-width: 0px;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2rem;
+    }
 
-.accordion-button:hover{
-    font-weight: bold; 
-}
+    #inicio p {
+        font-size: 1rem;
+    }
 
-.accordion-item{
-    border-style: solid;
-    border-width: 0px;
-    border-bottom-width: 1px;
-    border-color: #572b2b;
+    section {
+        padding: 2rem 0;
+    }
 }
-
-.accordion-collapse{
-    border-width: 0px !important;
-}
-
 
 
 
