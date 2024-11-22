@@ -42,12 +42,17 @@ a:hover {
 
 /* Hero Section */
 #inicio {
-    background: url('img/cybersecurity-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-image: url('img/cybersecurity-bg.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Configura la altura como el 100% de la ventana */
+    display: flex; /* Asegura un diseño flexible */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Alinea el texto */
+    color: #ffffff; /* Asegura que el texto sea legible sobre el fondo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega un sombreado al texto para mayor contraste */
 }
 
 #inicio h1 {
