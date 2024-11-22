@@ -139,5 +139,45 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+    <!-- Modal Dinámico para Mostrar Imágenes -->
+<div class="modal fade" id="ModalPhoto" tabindex="-1" aria-labelledby="ModalPhotoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalPhotoLabel">Vista Previa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="" class="img-fluid" alt="Vista previa">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Casos de Éxito -->
+<section id="casos-exito" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Casos de Éxito</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Startup Tech</h5>
+                <p>Auditoría y mitigación de riesgos, reduciendo un 80% de vulnerabilidades.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPhoto" data-photo="startup-tech">Ver Imagen</button>
+            </div>
+            <div class="col-md-4">
+                <h5>Empresa Retail</h5>
+                <p>Implementación de estrategias de seguridad cumpliendo GDPR.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPhoto" data-photo="empresa-retail">Ver Imagen</button>
+            </div>
+            <div class="col-md-4">
+                <h5>PyMEs</h5>
+                <p>Capacitación en seguridad para equipos de pequeñas empresas.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalPhoto" data-photo="pymes">Ver Imagen</button>
+            </div>
+        </div>
+    </div>
+</section>
 </html>
 
